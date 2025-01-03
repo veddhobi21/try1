@@ -885,6 +885,11 @@ def chatbot_page2():
     import faiss
     import numpy as np
     from nltk import sent_tokenize
+    import nltk
+    nltk.download('punkt_tab')
+    import nltk
+    print(nltk.data.path)
+
 
     # Load Models
     embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
@@ -1423,6 +1428,8 @@ def chatbot_page8():
 import streamlit as st
 from transformers import BlipProcessor, BlipForConditionalGeneration
 from PIL import Image
+from transformers import BlipForConditionalGeneration
+
 
 def chatbot_page9():
 
