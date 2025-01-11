@@ -748,6 +748,9 @@ def settings_page():
 def chatbot_page1():
     global st
     import os
+# Replace 'your_api_key_here' with the actual API key
+client = Client(api_key="your_api_key_here")
+
     # Load environment variables
     google_api = os.getenv('google_api')
     # Sidebar
